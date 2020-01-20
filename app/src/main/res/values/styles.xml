@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ColumnLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_margin">1dp</item>
+    </style>
+
+    <style name="TitleTV">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="ScoreTV" parent="TitleTV">
+        <item name="android:textSize">50sp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+
+    <style name="FoulTV" parent="ScoreTV">
+        <!--<item name="android:textSize">32sp</item>-->
+    </style>
+
+    <style name="CtrlBTNsContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@android:color/holo_green_light</item>
+    </style>
+
+    <style name="CtrlBTN" parent="FoulTV">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:contentDescription">No Image</item>
+    </style>
+
+    <style name="ResetBTN">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--        <item name="android:layout_marginTop">50dp</item>-->
+        <item name="android:textSize">35sp</item>
+        <item name="android:text">@string/reset</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+</resources>

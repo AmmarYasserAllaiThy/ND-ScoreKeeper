@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout style="@style/ColumnLayout">
+
+            <TextView
+                style="@style/TitleTV"
+                android:text="Team 1\n\nScore" />
+
+            <TextView
+                android:id="@+id/team1ScoreTV"
+                style="@style/ScoreTV" />
+
+            <LinearLayout style="@style/CtrlBTNsContainer">
+
+                <ImageButton
+                    style="@style/CtrlBTN"
+                    android:onClick="team1_score_plus"
+                    android:src="@drawable/ic_add_box_black_24dp" />
+
+                <ImageButton
+                    style="@style/CtrlBTN"
+                    android:onClick="team1_score_minus"
+                    android:src="@drawable/ic_indeterminate_check_box_black_24dp" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/TitleTV"
+                android:text="@string/fouls" />
+
+            <TextView
+                android:id="@+id/team1FoulsTV"
+                style="@style/FoulTV" />
+
+            <LinearLayout style="@style/CtrlBTNsContainer">
+
+                <ImageButton
+                    style="@style/CtrlBTN"
+                    android:onClick="team1_fouls_plus"
+                    android:src="@drawable/ic_add_box_black_24dp" />
+
+                <ImageButton
+                    style="@style/CtrlBTN"
+                    android:onClick="team1_fouls_minus"
+                    android:src="@drawable/ic_indeterminate_check_box_black_24dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/ColumnLayout">
+
+            <TextView
+                style="@style/TitleTV"
+                android:text="Team 2\n\nScore" />
+
+            <TextView
+                android:id="@+id/team2ScoreTV"
+                style="@style/ScoreTV" />
+
+            <LinearLayout style="@style/CtrlBTNsContainer">
+
+                <ImageButton
+                    style="@style/CtrlBTN"
+                    android:onClick="team2_score_plus"
+                    android:src="@drawable/ic_add_box_black_24dp" />
+
+                <ImageButton
+                    style="@style/CtrlBTN"
+                    android:onClick="team2_score_minus"
+                    android:src="@drawable/ic_indeterminate_check_box_black_24dp" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/TitleTV"
+                android:text="@string/fouls" />
+
+            <TextView
+                android:id="@+id/team2FoulsTV"
+                style="@style/FoulTV" />
+
+            <LinearLayout style="@style/CtrlBTNsContainer">
+
+                <ImageButton
+                    style="@style/CtrlBTN"
+                    android:onClick="team2_fouls_plus"
+                    android:src="@drawable/ic_add_box_black_24dp" />
+
+                <ImageButton
+                    style="@style/CtrlBTN"
+                    android:onClick="team2_fouls_minus"
+                    android:src="@drawable/ic_indeterminate_check_box_black_24dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        style="@style/ResetBTN"
+        android:onClick="reset" />
+
+</RelativeLayout>
